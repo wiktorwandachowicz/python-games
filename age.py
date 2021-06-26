@@ -1,5 +1,3 @@
-age = 11
-
 def checkage(age):
     if age == 11:
             return ("you are my age!")
@@ -18,8 +16,16 @@ def checkage(age):
     else:
             return ("you are NOT my age!")
 
-x = checkage(age)
+def printage(age):
+    x = checkage(age)
+    howifeelabouturage = "Your age is " + str(age) + ", so " + x
+    print(howifeelabouturage)
 
-howifeelabouturage = "Your age is " + str(age) + ", so " + x
-
-print(howifeelabouturage)
+printage(11)
+printage(-0.5)
+printage(0.5)
+printage(43)
+printage(44)
+printage(45)
+printage(46)
+printage(2)
