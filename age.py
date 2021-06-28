@@ -17,10 +17,14 @@ def checkage(age):
             return ("you are NOT my age!")
 
 def printage(age):
-    yourage = checkage(age)
-    text = "Your age is " + str(age) + ", so "
-    howifeelaboutyourage = text + yourage
+    howifeelaboutyourage = textage(age)
     print(howifeelaboutyourage)
+
+def textage(age):
+    question = "Your age is " + str(age) + ", so "
+    answer = checkage(age)
+    text = question + answer
+    return text
 
 printage(11)
 printage(-0.5)
